@@ -1,0 +1,26 @@
+:root {
+  --primary-soft: #eaf2ff;
+  --border: #e9ecef;
+  --muted: #6c757d;
+  --danger-soft: #fff1f3;
+}
+
+body { color: #212529; }
+.card { border-radius: 1rem; }
+.form-control:focus { box-shadow: 0 0 0 .2rem rgba(13, 110, 253, .15); }
+.invalid-feedback { display: block; }
+.answer-box, .source-box {
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: .75rem;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.answer-box { min-height: 5rem; background: var(--primary-soft); border-color: rgba(13, 110, 253, .12); font-size: 1.05rem; }
+.answer-box.error { background: var(--danger-soft); border-color: rgba(220, 53, 69, .2); color: #7a1f2a; }
+.source-box { background: #f8f9fa; color: #495057; border-left: 4px solid #0d6efd; }
+.empty { color: var(--muted); font-style: italic; }
+@media (max-width: 576px) {
+  .card-body { padding: 1.25rem !important; }
+  #submitBtn { width: 100%; }
+}
